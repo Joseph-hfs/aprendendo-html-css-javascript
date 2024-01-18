@@ -3,7 +3,7 @@ let quantidade = document.getElementById('quantidade');
 quantidade.addEventListener('keyup', () => {
     pegaPokemons(quantidade.value);
 })
-44
+
 pegaPokemons(6);
 function pegaPokemons(quantidade) {
     fetch('https://pokeapi.co/api/v2/pokemon?limit=10' + quantidade)
